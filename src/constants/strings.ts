@@ -1,7 +1,7 @@
 export const GAME_TITLE = process.env.REACT_APP_GAME_NAME!
 
 export const WIN_MESSAGES = ['Muito bem!', 'Arrasou!', 'Ótimo!']
-export const GAME_COPIED_MESSAGE = 'Status do jogo copaido!'
+export const GAME_COPIED_MESSAGE = 'Status do jogo copiado!'
 export const NOT_ENOUGH_LETTERS_MESSAGE = 'Letras insuficientes!'
 export const WORD_NOT_FOUND_MESSAGE = 'Palavra não encontrada!'
 export const CORRECT_WORD_MESSAGE = (solution: string) =>

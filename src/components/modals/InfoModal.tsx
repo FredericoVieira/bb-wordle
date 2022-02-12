@@ -10,8 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="Como jogar" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Você tem 6 tentativas par adivinhar a palavra. A cada palpite a cor das
-        letras muda, indicando o quão perto você está da solução.
+        Você tem 6 tentativas para acertar a palavra do dia. A cada palpite a cor das letras indicam o qual perto está a solução.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -33,7 +32,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="O" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300 mt-2.5">
-        A letra X está na palavra mas na posição errada.
+        A letra B está na palavra mas na posição errada.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -47,8 +46,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         A letra X não pertence a palavra.
       </p>
       <p className="text-sm text-gray-500 dark:text-gray-300 mt-2.5">
-        As palavras a serem descobertas são relativas ao nosso banco.
-        Uma nova palavra é gerada a cada dia.
+        Voce pode colocar todas as palavras de 5 letras, mas a palavra correta sempre tem relação com o BB. Uma nova palavra é gerada a cada dia. Divirta-se!
       </p>
     </BaseModal>
   )
