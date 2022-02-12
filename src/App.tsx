@@ -46,7 +46,7 @@ function App() {
 
   const [currentGuess, setCurrentGuess] = useState('')
   const [isGameWon, setIsGameWon] = useState(false)
-  const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
+  const [isInfoModalOpen, setIsInfoModalOpen] = useState(true)
   const [isNotEnoughLetters, setIsNotEnoughLetters] = useState(false)
   const [isStatsModalOpen, setIsStatsModalOpen] = useState(false)
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false)
@@ -206,19 +206,19 @@ function App() {
   return (
     <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
       <div className="flex w-80 mx-auto items-center mb-8 mt-20">
-        <h1 className="text-xl ml-2.5 grow font-bold text-bluebb dark:text-yellow-300">
+        <h1 className="text-xl ml-2.5 grow font-bold dark:text-yellow-300 font-orbitron">
           {GAME_TITLE}
         </h1>
         <InformationCircleIcon
-          className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
+          className="h-6 w-6 mr-2 cursor-pointer dark:stroke-yellow-300"
           onClick={() => setIsInfoModalOpen(true)}
         />
         <ChartBarIcon
-          className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
+          className="h-6 w-6 mr-3 cursor-pointer dark:stroke-yellow-300"
           onClick={() => setIsStatsModalOpen(true)}
         />
         <CogIcon
-          className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
+          className="h-6 w-6 mr-3 cursor-pointer dark:stroke-yellow-300"
           onClick={() => setIsSettingsModalOpen(true)}
         />
       </div>
