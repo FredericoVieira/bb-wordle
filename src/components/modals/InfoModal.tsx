@@ -43,7 +43,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="A" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300 mt-2.5">
-        A letra X não pertence a palavra.
+        A letra T não pertence a palavra.
       </p>
       <p className="text-sm text-gray-500 dark:text-gray-300 mt-2.5">
         Voce pode colocar todas as palavras de 5 letras, mas a palavra correta sempre tem relação com o BB. Uma nova palavra é gerada a cada dia.

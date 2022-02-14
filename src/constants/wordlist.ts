@@ -31,4 +31,11 @@ export const WORDS = [
   'lance',
   'juros',
   'abono',
+  'entra',
+  'lucro',
+  'ponto',
+  'regra',
+  'regua',
+  'claro',
+  'selic'
 ]

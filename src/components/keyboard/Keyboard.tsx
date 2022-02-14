@@ -2,6 +2,7 @@ import { getStatuses } from '../../lib/statuses'
 import { Key } from './Key'
 import { useEffect } from 'react'
 import { ENTER_TEXT, DELETE_TEXT } from '../../constants/strings'
+import backspace from '../../images/backspace.png'
 
 type Props = {
   onChar: (value: string) => void
@@ -72,11 +73,11 @@ export const Keyboard = ({
             isRevealing={isRevealing}
           />
         ))}
+        <Key width={65.4} value="DELETE" onClick={onClick}>
+          <img src={backspace} height={30} width={30} alt="backspace" />
+        </Key>
       </div>
       <div className="flex justify-center">
-        <Key width={65.4} value="DELETE" onClick={onClick}>
-          {DELETE_TEXT}
-        </Key>
         {['Z', 'X', 'C', 'V', 'B', 'N', 'M'].map((key) => (
           <Key
             value={key}
