@@ -1,7 +1,7 @@
 import { getStatuses } from '../../lib/statuses'
 import { Key } from './Key'
 import { useEffect } from 'react'
-import { ENTER_TEXT, DELETE_TEXT } from '../../constants/strings'
+import { ENTER_TEXT } from '../../constants/strings'
 import backspace from '../../images/backspace.png'
 
 type Props = {
@@ -73,7 +73,7 @@ export const Keyboard = ({
             isRevealing={isRevealing}
           />
         ))}
-        <Key width={65.4} value="DELETE" onClick={onClick}>
+        <Key width={60} value="DELETE" onClick={onClick}>
           <img src={backspace} height={30} width={30} alt="backspace" />
         </Key>
       </div>

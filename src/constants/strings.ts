@@ -7,7 +7,6 @@ export const WORD_NOT_FOUND_MESSAGE = 'Palavra não encontrada!'
 export const CORRECT_WORD_MESSAGE = (solution: string) =>
   `A palavra era ${solution}`
 export const ENTER_TEXT = 'Enter'
-export const DELETE_TEXT = 'Delete'
 export const STATISTICS_TITLE = 'Estatísticas'
 export const GUESS_DISTRIBUTION_TEXT = 'Distribuição dos palpites'
 export const NEW_WORD_TEXT = 'Nova palavra em:'
